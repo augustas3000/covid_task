@@ -3,6 +3,7 @@ package com.interview.task.helpers;
 import com.interview.task.CountryPOJOBasic;
 import com.interview.task.DailyDataPOJO;
 import com.squareup.okhttp.*;
+import sun.reflect.Reflection;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -20,11 +21,11 @@ public class FetchFromAPI {
 //  all countries was locked for basic subscription, the only way was to perform multiple fetches (per each country, 10
 //  fetches to get last 10 days data) as per method: getDailyDataDataForSelectedCountries(). This was not ideal too, as the
 //  api limits a basic user to 1 request per second.
-
+//
 //  Since the task was written as an ephemeral - run, output, terminate application, the simple workaround was to make the
 //  program sleep for 1.5s after each request Thread.sleep(1500) - see method getDailyDataDataForSelectedCountries().
 //  This approach also required to fetch synchronously, because asynch fetches would make the program break.
-
+//
 //  If the app was written to run on web-server, the fetching would have to be asynchronous, but given the 1request/second
 //  limitation of the basic subscription, data loading would probably take too long. So if this was a project in a commercial
 //  setting, most likely one would either have to upgrade to better subscription with rapidapi.com, or just find another api.

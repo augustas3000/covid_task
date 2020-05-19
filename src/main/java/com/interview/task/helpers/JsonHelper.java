@@ -35,17 +35,6 @@ public class JsonHelper {
     }
 
 
-//    public static [] fromJsonNodeArrayToPojosArray(JsonNode nodeArray, Class<A> classs) {
-//
-//        <A>A[] pojosArray = new A[nodeArray.size()];
-//
-//        for (int i = 0; i<nodeArray.size(); i++) {
-//
-//
-//            pojosArray[i] = JsonProcessor.fromJsonNodeToPojo(parsed.get(i),CountryPOJO.class);
-//        }
-//    }
-
     public static JsonNode fromPojoToJsonNode(Object pojo) {
        return objectMapper.valueToTree(pojo);
     }
@@ -65,33 +54,6 @@ public class JsonHelper {
             objectWriter = objectWriter.with(SerializationFeature.INDENT_OUTPUT);
         return objectWriter.writeValueAsString(node);
     }
-
-//    Scott's:
-
-    public static JsonNode parseJson(String jsonNode) throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        JsonNode valuesNode = new ObjectMapper().readTree(jsonNode);
-        mapper.convertValue(valuesNode, CountryPOJOBasic[].class);
-        return valuesNode;
-    }
-
-    public static String printPrettyJson(String jsonNode) {
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            Object json = mapper.readValue(jsonNode, Object.class);
-            String prettyJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
-            return prettyJson;
-        } catch (Exception e) {
-            return "Pretty printing Json data did not work";
-        }
-    }
-
-
-//    js
-
-
-
-
 
 //    --------------------------------------------------------------------------
 //    Methods used to complete the exercise:

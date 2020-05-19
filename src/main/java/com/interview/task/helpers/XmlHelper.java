@@ -55,26 +55,5 @@ public class XmlHelper {
     }
 
 
-    public static void readXmlFromSelectedWithXsl(SelectedCountriesReport countries, String fileName) {
-        JAXBContext jaxbContext = null;
-//        add required tags for xsl...
-        try {
-            jaxbContext = JAXBContext.newInstance(countries.getClass());
-            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
-            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-            //Marshal the countries list in console
-//          jaxbMarshaller.marshal(top15CountriesByLat, System.out);
-
-//			Marshal the countries list in file
-            String pathNameToSaveTo = "results/" + fileName + ".xml";
-            jaxbMarshaller.marshal(countries, new File(pathNameToSaveTo));
-
-        } catch (
-                JAXBException e) {
-            e.printStackTrace();
-        }
-    }
 
 }

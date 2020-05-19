@@ -132,7 +132,7 @@ public class TaskApplication {
 		}
 
 //		5.2 - write to XML
-		XmlHelper.readXmlFromSelectedWithXsl(selectedCountriesReportHighestDeathToll, "selected-15-countries-highest-death-toll");
+		XmlHelper.readXmlFromSelected(selectedCountriesReportHighestDeathToll, "selected-15-countries-highest-death-toll");
 
 
 //		5.3 - attempt to transform an xml to html, based on results/report.xsl stylesheet which shoudl tidy up [rovinces data as well...
@@ -178,7 +178,7 @@ public class TaskApplication {
 
 
 
-//		5.3 - email everything: The code sends an email with the three xml files(as attachments) generated in this task.
+//		5.4 - email everything: The code sends an email with the three xml files(as attachments) generated in this task.
 //		remove commenting and provide details to see this in action. Gmail likely to require a setting to allow less secure
 //		apps to connect.
 
