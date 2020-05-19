@@ -51,9 +51,8 @@ limitation of the basic subscription, data loading would probably take too long.
 setting, most likely one would either have to upgrade to better subscription with rapidapi.com, or just find another api.
 
 Pojos to XML to HTML:
-Managed to write xmls based on pojos, and the structure made sence. However, I am quite new to the format, and only used it
-for configuration purposes in the past, and so the transformation of it was challenging - I managed to write an xsl stylesheet
-to achieve the desired table output in html, this works in a browser, but I struggled to achieve the actual transformation.
+Managed to write xmls based on pojos. However, I am quite new to the format, and only used it for configuration purposes in the past, and so the transformation of it was challenging - I managed to write an xsl stylesheet
+to achieve the desired table output in html, this works in a browser, but I struggled to achieve the actual transformation to html document.
 (commented code 5.3 in TaskApplication)
 
 Auto-emails: 
