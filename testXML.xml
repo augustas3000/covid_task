@@ -1,0 +1,45 @@
+<question id="1">
+    <answers>
+        <answername>java is a prog language</answername>
+        <id>101</id>
+        <postedby>ravi</postedby>
+    </answers>
+    <answers>
+        <answername>java is a platform</answername>
+        <id>102</id>
+        <postedby>john</postedby>
+    </answers>
+    <questionname>What is Java?</questionname>
+</question>
+
+
+<selected-5-countries-report>
+    <country>
+        <country-code>22</country-code>
+        <country-name>Canada</country-name>
+        <last10days>
+            <dayilypojo>
+
+            </dayilypojo>
+
+            <dayilypojo>
+
+            </dayilypojo>
+        </last10days>
+    </country>
+
+    <country>
+        <country-code>22</country-code>
+        <country-name>Canada</country-name>
+        <last10days>
+            <dayilypojo>
+
+            </dayilypojo>
+
+            <dayilypojo>
+
+            </dayilypojo>
+        </last10days>
+    </country>
+</selected-5-countries-report>
+
